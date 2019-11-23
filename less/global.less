@@ -11,7 +11,15 @@ html, body {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
 }
+body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 537px;
+    align-items: stretch;
+    margin: 0 auto;
 
+}
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
@@ -34,5 +42,13 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+  border: 1px @border-real;
+  @media @phone {
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 537px;
+      align-items: stretch;
+      padding: 10px;
+  }
 }
-
